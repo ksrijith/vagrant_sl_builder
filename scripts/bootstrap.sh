@@ -1,6 +1,4 @@
 #!/bin/bash
-mv /share/scripts /home/vagrant
-chmod -R +x /home/vagrant/scripts
 apt-get update
 apt-get install -y git
 apt-get install -y python-software-properties
