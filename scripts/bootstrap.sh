@@ -2,7 +2,7 @@
 apt-get update
 apt-get install -y git
 apt-get install -y python-software-properties
-su - vagrant -c "curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -"
+su - vagrant -c "curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -"
 apt-get install -y nodejs
 npm i -g npm@latest
 apt-get install -y build-essential
