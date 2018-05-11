@@ -5,10 +5,11 @@ then
     exit 1
 fi
 PROJECT_NAME=$1
-C_Q_S_URL="https://github.com/ksrijith/covalent-quickstart.git"
+C_Q_S_URL="https://github.com/Teradata/covalent-quickstart.git"
 git clone "$C_Q_S_URL" $PROJECT_NAME
 cd $PROJECT_NAME
+git checkout develop
+rm -rf .git
 yarn install
 ./node_modules/.bin/webdriver-manager update
-rm -rf .git
 git init
