@@ -1,5 +1,6 @@
 #!/bin/bash
 apt-get update
+apt-get -y upgrade
 apt-get install -y git
 apt-get install -y python-software-properties
 su - vagrant -c "curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -"
