@@ -5,7 +5,8 @@ apt-get update
 apt-get install -y git
 apt-get install -y python-software-properties
 su - vagrant -c "curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -"
-# apt-get install -y nodejs
+apt-get install -y nodejs
+npm i -g npm@latest
 apt-get install -y build-essential
 
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
@@ -19,7 +20,7 @@ yarn global add protractor@latest
 yarn install
 webdriver-manager update
 
-su - vagrant -c "ng set --global packageManager=yarn"
+su - vagrant -c "ng config -g cli.packageManager yarn"
 
 
 #Install Mongodb
